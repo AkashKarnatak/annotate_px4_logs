@@ -34,7 +34,7 @@ to each user which they can review to identify and mark any anomalies.
 
 Use the `./preprocessing/download_logs.py` script to download ulog files from PX4 flight review's
 database. Download options are specified in the `./preprocessing/downloader_options.yaml` file.
-Update the download parameters to your liking and then run the below command,
+Update the download parameters as desired and then run the following command:
 
    ```bash
    python3 preprocessing/download_logs.py
@@ -44,9 +44,9 @@ The above command will start downloading ulog files in the `./data/ulg_files` di
 
 ### 6. Create database:
 
-Once you have downloaded ulog files, you need to convert them to csv files in order for the
-application to server log files to the users. Running the below command will convert the ulog
-files into csv files and store it in `./data/csv_files` directory.
+Once you have downloaded the ulog files, you need to convert them to csv files for the
+application to serve the log files to users. Running the following command will convert
+the ulog files into csv files and store them in the `./data/csv_files` directory.
 
    ```bash
    python3 preprocessing/ulog2csv.py
@@ -59,6 +59,9 @@ Now you are all set and you can run the server by issuing the following command,
    ```bash
    python3 server/app.py
    ```
+
+All the annotated files will be stored in csv format in the `./data/annotated_csv_files`
+directory.
 
 ## Contributing
 
