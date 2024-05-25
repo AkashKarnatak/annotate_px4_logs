@@ -3,6 +3,8 @@
 Annotate PX4 Logs is a web application for gathering annotated PX4 log files. The web application servers a random log file
 to each user which they can review to identify and mark any anomalies.
 
+https://github.com/AkashKarnatak/annotate_px4_logs/assets/54985621/c55a77db-4941-41ad-a369-115c9126e2ae
+
 ## Setup and Installation
 
 ### 1. Clone the repository:
